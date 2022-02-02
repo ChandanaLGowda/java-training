@@ -5,11 +5,11 @@ import com.dxc.learning.demo1.model.Author;
 
 public interface Authorservice {
 
-    public Author getUserById(int id);
+    public Author getAuthorById(int id);
     
-    public Author getUserByname(String name);
+    public Author getAuthorByname(String name);
 
-    public Author getUserByEmail(String email);
+    public Author getAuthorByEmail(String email);
 
     public Author createAuthor(Author author);
 

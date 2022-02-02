@@ -1,6 +1,8 @@
 package com.dxc.learning.demo1.controllers;
 
 import com.dxc.learning.demo1.model.Book;
+import java.time.LocalDate;
+import java.util.List;
 import com.dxc.learning.demo1.repository.BookRepository;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -31,7 +33,7 @@ public class BookController {
 
   @PostMapping("/books")
     public Book newBook(@RequestBody Book newBook) {
-    newBook.setPublicationDate(LocalDate());
+    newBook.setPublicationDate(LocalDate.now());
     return repository.save(newBook);
   }
   
